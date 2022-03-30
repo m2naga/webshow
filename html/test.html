@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dialog" id="sample-dialog">
+            <div class="dialog-close">
+                <img src="../images/close.svg" alt="test">
+            </div>
+        <div class="dialog-header">
+            <span class="dialog-title"><h1>サンプルダイアログ(タイトル)</h1></span>
+        </div>
+        <div class="dialog-content">
+            <div>
+                <p>画像サンプル(png)</p>
+                <img src="../images/movie.svg" alt="test">
+            </div>
+            <div>
+                <p>動画のサンプル1(mp4)</p>
+                <video src="../movie/Record - 65390.mp4" controls></video>
+            </div>
+            <div class="dialog-info">
+                <h3>
+                ここに説明が入ります。
+                あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをん
+                ここに説明が入ります。
+                </h3>
+            </div>
+            <div>
+                <p>動画のサンプル2(YouTube埋め込み)</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZG9G3v1RPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog" id="sample01">
+        <div class="dialog-close">
+            <img src="../images/close.svg" alt="test">
+        </div>
+        <div class="dialog-header">
+            <span class="dialog-title"><h1>サンプルダイアログ(タイトル)</h1></span>
+        </div>
+        <div class="dialog-content">
+            <div>
+                <p>動画のサンプル1(mp4)</p>
+                <video src="../movie/Record - 65390.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog" id="sample02">
+        <div class="dialog-close">
+            <img src="../images/close.svg" alt="test">
+        </div>
+        <div class="dialog-header">
+            <span class="dialog-title"><h1>サンプルダイアログ(タイトル)</h1></span>
+        </div>
+        <div class="dialog-content">
+            <div>
+                <p>画像サンプル(png)</p>
+                <img src="../images/movie.svg" alt="test">
+            </div>
+        </div>
+    </div>
+
+    <button id="open-sample-dialog">ダイアログを開く</button>
+    <button data-target="sample01" class="js-sample-open"><img src="../images/movie.svg" alt="test"></button>
+    <button data-target="sample02" class="js-sample-open"><img src="../images/info.svg" alt="test"></button>
+</body>
+<script type="text/javascript" src="../js/test.js"></script>
+</html>

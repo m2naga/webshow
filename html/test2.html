@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--ダイアログを呼び出すボタン-->
+    <button id="btn_action">ダイアログ表示</button>
+    
+    <!--ダイアログの内容-->
+    <div id="mydialog" title="サンプルタイトル">
+        <img src="../images/close.svg" alt="test">
+        <div>
+            オリジナルダイアログをポップアップ表示するサンプル。
+        </div>
+        <button id="btn_action2">ダイアログ表示</button>
+        <div id="mydialog2" title="サンプルタイトル">
+            <img src="../images/close.svg" alt="test">オリジナルダイアログをポップアップ表示するサンプル。
+        </div>
+    </div>
+
+    <div class="dialog" id="sample-dialog">
+        <div class="dialog-close">
+            <img src="../images/close.svg" alt="test">
+        </div>
+    <div class="dialog-header">
+        <span class="dialog-title">サンプルダイアログ(タイトル)</span>
+    </div>
+    <div class="dialog-content">
+        <img src="../images/movie.svg" alt="test">
+        <div>
+            <video src="../movie/Record - 65390.mp4" controls></video>
+        </div>
+        <div>
+            オリジナルダイアログをポップアップ表示するサンプル。
+            ここに説明が入ります。
+            オリジナルダイアログをポップアップ表示するサンプル。
+            ここに説明が入ります。
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZG9G3v1RPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+    <button id="open-sample-dialog">ダイアログを開く</button>
+</body>
+<script type="text/javascript" src="../js/test.js"></script>
+</html>

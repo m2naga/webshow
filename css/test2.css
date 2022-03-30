@@ -1,0 +1,61 @@
+/* ダイアログのタイトル */
+.ui-dialog-titlebar {
+    color: #000;
+    background: #fff;
+    }
+    
+    /* ダイアログの内容 */
+    .ui-dialog-content {
+    color: #000;
+    }
+    
+    .ui-dialog-titlebar-close {
+        top: 0%;
+    }
+    
+    .ui-button .ui-icon {
+        background-image: url(../images/close.svg);
+    }
+    
+    .dialog {
+        overflow: hidden;
+        position: absolute;
+        top: 30%;
+        height: auto;
+        width: 70%;
+        display: none;
+        z-index:1000;
+        border:1px solid #aaa;
+      }
+      .dialog-header {
+        color: #000;
+        font-weight: bold;
+        overflow: hidden;
+        padding:5px;
+      }
+      .dialog-title {
+        float: left;
+      }
+      .dialog-close{
+        float: right;
+      }
+      .dialog-close img{
+        float: right;
+        width: 5%;
+      }
+      .dialog-content {
+        position: relative;
+        border: 0;
+        padding: .5em 1em;
+        background: #fff;
+        overflow: auto;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+      }
+    
+      .dialog-content video{
+        width: 90%;
+      }
+    
