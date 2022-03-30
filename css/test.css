@@ -1,6 +1,7 @@
 .dialog {
     overflow: auto;
     position: absolute;
+    background: #fff;
     top: 10%;
     bottom: 10%;
     height: auto;
@@ -12,6 +13,7 @@
 }
 .dialog-header {
     float: left;
+    background: #fff;
     color: #000;
     font-weight: bold;
     overflow: hidden;
